@@ -1,0 +1,106 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<div class="row">
+    <div class="col">
+        <textarea id ="ta" rows="5" style="width:100%"></textarea>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="a" ><img src="fez_imgs/a.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="b" ><img src="fez_imgs/b.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="c" ><img src="fez_imgs/c.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="d" ><img src="fez_imgs/d.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="e" ><img src="fez_imgs/e.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="f" ><img src="fez_imgs/f.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="g" ><img src="fez_imgs/g.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="h" ><img src="fez_imgs/h.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="i" ><img src="fez_imgs/i.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="j" ><img src="fez_imgs/j.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="k" ><img src="fez_imgs/k.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="l" ><img src="fez_imgs/l.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="m" ><img src="fez_imgs/m.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="n" ><img src="fez_imgs/n.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="o" ><img src="fez_imgs/o.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="p" ><img src="fez_imgs/p.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="q" ><img src="fez_imgs/q.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="r" ><img src="fez_imgs/r.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="s" ><img src="fez_imgs/s.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="t" ><img src="fez_imgs/t.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="u" ><img src="fez_imgs/u.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="v" ><img src="fez_imgs/v.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="w" ><img src="fez_imgs/w.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="x" ><img src="fez_imgs/x.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="y" ><img src="fez_imgs/y.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="z" ><img src="fez_imgs/z.png"></button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-default mb-4" value="clear" >clear</button>
+    </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $(".btn").click(function(){
+        if($(this).val()=="clear"){
+            $("#ta").val("");
+        }
+        else{
+            $("#ta").val($("#ta").val()+$(this).val());        
+        }
+    });
+});
+</script>
